@@ -62,6 +62,7 @@ const WisiwigEditor = () => {
         });
 
         editorRef.current = quill;
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     // Fonction pour insérer une image dans l'éditeur
