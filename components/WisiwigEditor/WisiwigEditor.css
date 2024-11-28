@@ -1,0 +1,25 @@
+.context-menu-image {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    min-width: 200px;
+
+    position: absolute;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.context-menu-image > * {
+    width: 100%;
+    padding: 8px 12px;
+    border: none;
+    background: none;
+    text-align: left;
+    cursor: pointer;
+    color: black;
+}
+
+.context-menu-image button:hover {
+    background-color: #f0f0f0;
+}
