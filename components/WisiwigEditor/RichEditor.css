@@ -1,0 +1,86 @@
+.toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.toolbar button,
+.toolbar input.color-picker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background: #f9f9f9;
+    border-radius: 4px;
+    font-size: 18px;
+    padding: 4px;
+    color: black;
+}
+
+.toolbar button.active {
+    background: #ddd;
+    font-weight: bold;
+}
+
+.toolbar input.color-picker {
+    border: none;
+    padding: 0;
+}
+.color-picker-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.color-picker {
+    width: 36px;
+    height: 36px;
+    border: none;
+    cursor: pointer;
+}
+
+.editor {
+    min-height: 300px;
+    background-color: white;
+    color: black;
+    padding: O 8px;
+}
+
+.editor .tiptap {
+    padding: 0 8px;
+}
+
+.editor blockquote {
+    border-left: 4px solid #808284; /* Couleur et épaisseur de la bordure */
+    padding-left: 16px; /* Espace entre la bordure et le texte */
+    margin: 16px 0; /* Marge en haut et en bas */
+    color: #555; /* Couleur du texte */
+    background-color: #f9f9f9; /* Couleur de fond du bloc */
+    padding-right: 16px; /* Pour un meilleur alignement avec du texte de longueur variable */
+}
+
+/* Optionnel : Ajoutez une bordure arrondie ou d'autres détails pour le style */
+.editor blockquote {
+    border-radius: 4px;
+}
+
+.editor ol,
+.editor ul {
+    padding-left: 20px; /* Décalage pour les listes */
+}
+
+.editor ol {
+    list-style-type: decimal; /* Numérotation des éléments */
+}
+
+.editor ul {
+    list-style-type: disc; /* Points pour les listes non ordonnées */
+}
+
+.editor li {
+    margin-bottom: 8px; /* Espace entre les éléments de la liste */
+}

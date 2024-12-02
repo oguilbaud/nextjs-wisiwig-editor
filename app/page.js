@@ -1,11 +1,11 @@
 "use client";
 
-import dynamic from "next/dynamic";
+import RichEditor from "@/components/WisiwigEditor/RichEditor";
 import { useEffect, useState } from "react";
 
-const WisiwigEditor = dynamic(() => import("@/components/WisiwigEditor/WisiwigEditor"), {
-    ssr: false, // Désactive le rendu côté serveur
-});
+// const WisiwigEditor = dynamic(() => import("@/components/WisiwigEditor/WisiwigEditor"), {
+//     ssr: false, // Désactive le rendu côté serveur
+// });
 
 export default function Home() {
     const [isReady, setIsReady] = useState(false);
@@ -18,7 +18,8 @@ export default function Home() {
     return (
         <div>
             <h1>Éditeur de texte WYSIWYG</h1>
-            {isReady ? <WisiwigEditor /> : <p>Chargement de l&apos;éditeur...</p>}
+            <RichEditor />
+            {/* {isReady ? <WisiwigEditor /> : <p>Chargement de l&apos;éditeur...</p>} */}
         </div>
     );
 }
